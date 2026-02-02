@@ -1,11 +1,11 @@
 import React from 'react';
-import { GraduationCap, Award } from 'lucide-react';
+import { GraduationCap, Award, ExternalLink } from 'lucide-react';
 
 const Education = () => {
   const education = [
     {
       school: 'GD Goenka University',
-      degree: 'BTECH SELECT',
+      degree: 'BTECH CSE',
       year: '2023',
       grade: null
     },
@@ -72,9 +72,20 @@ const Education = () => {
           </div>
 
           <div>
-            <div className="flex items-center gap-3 mb-8">
-              <Award className="text-blue-600" size={32} />
-              <h2 className="text-3xl font-bold text-gray-900">Certifications</h2>
+            <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center gap-3">
+                <Award className="text-blue-600" size={32} />
+                <h2 className="text-3xl font-bold text-gray-900">Certifications</h2>
+              </div>
+              <a 
+                href="https://drive.google.com/drive/folders/17c_OoqvbFseHTycsNH22lhj2Li5C-0Jk" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-lg hover:text-blue-600 hover:border-blue-200 hover:shadow-sm transition-all duration-200 text-sm font-medium"
+              >
+                <ExternalLink size={16} />
+                View All Certificates
+              </a>
             </div>
 
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg hover:-translate-y-1 hover:scale-105 transition-all duration-300 cursor-pointer">

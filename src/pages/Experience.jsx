@@ -6,7 +6,7 @@ const Experience = () => {
     {
       title: 'FUllSTACK DEVELOPER ',
       company: 'WEBARCLIGHT',
-      period: '27 Oct 2025 - Present',
+      period: 'Oct 2025 - Jan 2026 ',
       type: 'Remote',
       description: [
         'Learning and building end-to-end applications with React, Node.js, and Tailwind CSS.',
