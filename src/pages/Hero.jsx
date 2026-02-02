@@ -48,18 +48,18 @@ const Hero = () => {
           </div>
           
           <div className="flex-1 relative">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto">
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 mx-auto">
               <div className="absolute inset-0 bg-blue-600 rounded-full opacity-20 blur-3xl animate-pulse"></div>
               <div className="relative w-full h-full rounded-full border-4 border-white shadow-2xl overflow-hidden bg-gray-100 flex items-center justify-center hover:shadow-3xl hover:-translate-y-2 hover:border-blue-300 transition-all duration-300 cursor-pointer group">
                 <img src={profileImage} alt="Ayush" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               
-              <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-xl shadow-lg border border-gray-100 animate-bounce delay-700">
-                <p className="font-bold text-gray-900">2+</p>
+              <div className="absolute -bottom-4 -right-4 bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-gray-100 animate-bounce delay-700">
+                <p className="font-bold text-gray-900 text-sm sm:text-base">2+</p>
                 <p className="text-xs text-gray-500">Internships</p>
               </div>
-              <div className="absolute -top-4 -left-4 bg-white p-4 rounded-xl shadow-lg border border-gray-100 animate-bounce">
-                <p className="font-bold text-gray-900">10+</p>
+              <div className="absolute -top-4 -left-4 bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-gray-100 animate-bounce">
+                <p className="font-bold text-gray-900 text-sm sm:text-base">10+</p>
                 <p className="text-xs text-gray-500">Skills</p>
               </div>
             </div>

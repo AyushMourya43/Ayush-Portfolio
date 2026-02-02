@@ -20,7 +20,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50 relative">
+    <section className="py-12 md:py-20 bg-gray-50 relative">
       {/* Large background text for visual impact */}
       <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
         <h1 className="text-8xl md:text-9xl font-black text-gray-300 tracking-wider transform rotate-12">
@@ -30,7 +30,7 @@ const Skills = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-20">
-          <h2 className="group inline-block text-5xl md:text-7xl lg:text-8xl font-black text-gray-900 mb-6 leading-tight whitespace-nowrap transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm">
+          <h2 className="group inline-block text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-gray-900 mb-6 leading-tight whitespace-nowrap transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm">
             <span className="text-gray-900 transition-colors duration-200 group-hover:text-blue-600">Skills &</span>{' '}
             <span className="text-blue-600 transition-colors duration-200 group-hover:text-gray-900">Expertise</span>
           </h2>

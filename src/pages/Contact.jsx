@@ -40,9 +40,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-900 text-white">
+    <section id="contact" className="py-12 md:py-20 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-16">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16">
           <div>
             <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
             <p className="text-gray-400 mb-8 leading-relaxed">

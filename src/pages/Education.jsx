@@ -47,7 +47,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20 bg-white">
+    <section id="education" className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
@@ -72,7 +72,7 @@ const Education = () => {
           </div>
 
           <div>
-            <div className="flex items-center justify-between mb-8">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
               <div className="flex items-center gap-3">
                 <Award className="text-blue-600" size={32} />
                 <h2 className="text-3xl font-bold text-gray-900">Certifications</h2>
@@ -81,7 +81,7 @@ const Education = () => {
                 href="https://drive.google.com/drive/folders/17c_OoqvbFseHTycsNH22lhj2Li5C-0Jk" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-lg hover:text-blue-600 hover:border-blue-200 hover:shadow-sm transition-all duration-200 text-sm font-medium"
+                className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-lg hover:text-blue-600 hover:border-blue-200 hover:shadow-sm transition-all duration-200 text-sm font-medium w-full sm:w-auto"
               >
                 <ExternalLink size={16} />
                 View All Certificates

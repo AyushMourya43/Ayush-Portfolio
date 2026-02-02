@@ -71,10 +71,10 @@ const Experience = () => {
   );
 
   return (
-    <section id="experience" className="py-20 bg-white relative">
+    <section id="experience" className="py-12 md:py-20 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-20">
-          <h2 className="group inline-block text-5xl md:text-7xl lg:text-8xl font-black text-gray-900 mb-6 leading-tight whitespace-nowrap transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm">
+          <h2 className="group inline-block text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-gray-900 mb-6 leading-tight whitespace-nowrap transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm">
             <span className="text-gray-900 transition-colors duration-200 group-hover:text-blue-600">Work</span>{' '}
             <span className="text-blue-600 transition-colors duration-200 group-hover:text-gray-900">Experience</span>
           </h2>
@@ -93,16 +93,22 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="relative ml-4 md:ml-0 md:pl-0 space-y-12">
+        <div className="relative ml-0 md:ml-0 md:pl-0 space-y-12">
           {Array.from({ length: Math.ceil(experiences.length / 2) }).map((_, rowIdx) => {
             const leftExp = experiences[rowIdx * 2];
             const rightExp = experiences[rowIdx * 2 + 1];
             return (
-              <div key={rowIdx} className="relative pl-8 md:pl-0">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-blue-600 w-4 h-4 rounded-full border-4 border-white shadow-sm"></div>
+              <div key={rowIdx} className="relative">
+                {/* Center line/dot - hidden on mobile, visible on md+ */}
+                <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 bg-blue-600 w-4 h-4 rounded-full border-4 border-white shadow-sm z-10"></div>
+                
                 <div className="md:flex items-stretch justify-between gap-8">
-                  <div className="md:w-5/12">{renderCard(leftExp)}</div>
-                  <div className="md:w-5/12">{rightExp ? renderCard(rightExp) : renderUpcoming()}</div>
+                  <div className="md:w-5/12 mb-8 md:mb-0">
+                    {leftExp && renderCard(leftExp)}
+                  </div>
+                  <div className="md:w-5/12">
+                    {rightExp ? renderCard(rightExp) : (rowIdx * 2 + 1 < experiences.length + 1 ? renderUpcoming() : null)}
+                  </div>
                 </div>
               </div>
             );
