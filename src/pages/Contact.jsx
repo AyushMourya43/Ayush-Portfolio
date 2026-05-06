@@ -52,7 +52,7 @@ const Contact = () => {
             
             <div className="space-y-6">
               <a href="mailto:ayushmourya43@gmail.com" className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group">
-                <div className="p-3 bg-gray-800 rounded-lg group-hover:bg-blue-600 transition-colors">
+                <div className="p-3 bg-gray-800 rounded-lg group-hover:bg-orange-600 transition-colors">
                   <Mail size={24} />
                 </div>
                 <div>
@@ -62,7 +62,7 @@ const Contact = () => {
               </a>
               
               <a href="tel:8171478306" className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group">
-                <div className="p-3 bg-gray-800 rounded-lg group-hover:bg-blue-600 transition-colors">
+                <div className="p-3 bg-gray-800 rounded-lg group-hover:bg-orange-600 transition-colors">
                   <Phone size={24} />
                 </div>
                 <div>
@@ -77,7 +77,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group"
               >
-                <div className="p-3 bg-gray-800 rounded-lg group-hover:bg-blue-600 transition-colors">
+                <div className="p-3 bg-gray-800 rounded-lg group-hover:bg-orange-600 transition-colors">
                   <MapPin size={24} />
                 </div>
                 <div>
@@ -94,7 +94,7 @@ const Contact = () => {
                   href="https://linkedin.com/in/ayush-mourya-7999a428a" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="p-3 bg-gray-800 rounded-lg hover:bg-blue-600 text-white transition-all hover:-translate-y-1"
+                  className="p-3 bg-gray-800 rounded-lg hover:bg-orange-600 text-white transition-all hover:-translate-y-1"
                 >
                   <Linkedin size={24} />
                 </a>
@@ -119,7 +119,7 @@ const Contact = () => {
                   type="text" 
                   name="user_name"
                   required
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none text-white placeholder-gray-500"
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-transparent outline-none text-white placeholder-gray-500"
                   placeholder="Your Name"
                 />
               </div>
@@ -129,7 +129,7 @@ const Contact = () => {
                   type="email" 
                   name="user_email"
                   required
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none text-white placeholder-gray-500"
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-transparent outline-none text-white placeholder-gray-500"
                   placeholder="your@email.com"
                 />
               </div>
@@ -139,7 +139,7 @@ const Contact = () => {
                   name="message"
                   required
                   rows="4"
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none text-white placeholder-gray-500"
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-transparent outline-none text-white placeholder-gray-500"
                   placeholder="Your message..."
                 ></textarea>
               </div>
@@ -153,7 +153,7 @@ const Contact = () => {
               <button 
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-3 px-6 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
                   <>

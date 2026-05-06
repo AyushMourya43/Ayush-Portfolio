@@ -26,7 +26,7 @@ const Header = () => {
               <a
                 key={item.title}
                 href={item.href}
-                className="inline-flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-200"
+                className="inline-flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-orange-600 hover:bg-gray-50 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-200"
               >
                 {item.title}
               </a>
@@ -34,19 +34,19 @@ const Header = () => {
             <a
               href={resumePdf}
               download="Ayush_Resume.pdf"
-              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all"
+              className="inline-flex items-center px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 hover:shadow-lg hover:-translate-y-0.5 transition-all"
             >
               <Download size={16} className="mr-2" />
               Get Resume
             </a>
             <div className="flex items-center space-x-4 ml-4 border-l pl-4 border-gray-200">
-              <a href="https://linkedin.com/in/ayush-mourya-7999a428a" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg text-gray-500 hover:text-blue-600 hover:bg-gray-100 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-200">
+              <a href="https://linkedin.com/in/ayush-mourya-7999a428a" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg text-gray-500 hover:text-orange-600 hover:bg-gray-100 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-200">
                 <Linkedin size={20} />
               </a>
-              <a href="https://github.com/AyushMourya43" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg text-gray-500 hover:text-blue-600 hover:bg-gray-100 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-200">
+              <a href="https://github.com/AyushMourya43" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg text-gray-500 hover:text-orange-600 hover:bg-gray-100 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-200">
                 <Github size={20} />
               </a>
-              <a href="mailto:ayushmourya43@gmail.com" className="p-2 rounded-lg text-gray-500 hover:text-blue-600 hover:bg-gray-100 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-200">
+              <a href="mailto:ayushmourya43@gmail.com" className="p-2 rounded-lg text-gray-500 hover:text-orange-600 hover:bg-gray-100 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-200">
                 <Mail size={20} />
               </a>
             </div>
@@ -71,7 +71,7 @@ const Header = () => {
               <a
                 key={item.title}
                 href={item.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-200"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-gray-50 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-200"
                 onClick={() => setIsOpen(false)}
               >
                 {item.title}
@@ -80,20 +80,20 @@ const Header = () => {
             <a
               href={resumePdf}
               download="Ayush_Resume.pdf"
-              className="mt-2 block w-full text-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:shadow-lg transition-all"
+              className="mt-2 block w-full text-center px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 hover:shadow-lg transition-all"
             >
               Get Resume
             </a>
             <div className="border-t border-gray-200 mt-4 pt-4">
               <p className="px-3 text-sm font-medium text-gray-500 mb-3">Connect</p>
               <div className="flex justify-center space-x-6">
-                <a href="https://linkedin.com/in/ayush-mourya-7999a428a" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 transition-colors">
+                <a href="https://linkedin.com/in/ayush-mourya-7999a428a" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-orange-600 transition-colors">
                   <Linkedin size={24} />
                 </a>
-                <a href="https://github.com/AyushMourya43" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 transition-colors">
+                <a href="https://github.com/AyushMourya43" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-orange-600 transition-colors">
                   <Github size={24} />
                 </a>
-                <a href="mailto:ayushmourya43@gmail.com" className="text-gray-500 hover:text-blue-600 transition-colors">
+                <a href="mailto:ayushmourya43@gmail.com" className="text-gray-500 hover:text-orange-600 transition-colors">
                   <Mail size={24} />
                 </a>
               </div>

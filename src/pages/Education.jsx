@@ -47,21 +47,21 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-12 md:py-20 bg-white">
+    <section id="education" className="py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <GraduationCap className="text-blue-600" size={32} />
+              <GraduationCap className="text-orange-600" size={32} />
               <h2 className="text-3xl font-bold text-gray-900">Education</h2>
             </div>
             
             <div className="space-y-8">
               {education.map((edu, index) => (
                 <div key={index} className="relative pl-8 border-l-2 border-gray-200 bg-white p-6 rounded-xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="absolute top-0 left-[-9px] bg-white w-4 h-4 rounded-full border-2 border-blue-600"></div>
+                  <div className="absolute top-0 left-[-9px] bg-white w-4 h-4 rounded-full border-2 border-orange-600"></div>
                   <h3 className="text-lg font-bold text-gray-900">{edu.school}</h3>
-                  <p className="text-blue-600 font-medium">{edu.degree}</p>
+                  <p className="text-orange-600 font-medium">{edu.degree}</p>
                   <div className="flex justify-between items-center mt-2 text-sm text-gray-500">
                     <span>{edu.year}</span>
                     {edu.grade && <span className="font-semibold text-gray-700">CBSE</span>}
@@ -74,14 +74,14 @@ const Education = () => {
           <div>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
               <div className="flex items-center gap-3">
-                <Award className="text-blue-600" size={32} />
+                <Award className="text-orange-600" size={32} />
                 <h2 className="text-3xl font-bold text-gray-900">Certifications</h2>
               </div>
               <a 
                 href="https://drive.google.com/drive/folders/17c_OoqvbFseHTycsNH22lhj2Li5C-0Jk" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-lg hover:text-blue-600 hover:border-blue-200 hover:shadow-sm transition-all duration-200 text-sm font-medium w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-lg hover:text-orange-600 hover:border-orange-200 hover:shadow-sm transition-all duration-200 text-sm font-medium w-full sm:w-auto"
               >
                 <ExternalLink size={16} />
                 View All Certificates
@@ -92,7 +92,7 @@ const Education = () => {
               <ul className="space-y-6">
                 {certifications.map((cert, index) => (
                   <li key={index} className="flex items-start gap-4 bg-white p-4 rounded-xl hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-                    <div className="p-2 bg-blue-100 rounded-lg text-blue-600 mt-1">
+                    <div className="p-2 bg-orange-100 rounded-lg text-orange-600 mt-1">
                       <Award size={20} />
                     </div>
                     <div>
