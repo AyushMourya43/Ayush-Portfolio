@@ -2,15 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom background attachment for responsive design */
-@media (min-width: 768px) {
-  .bg-fixed-responsive {
-    background-attachment: fixed;
-  }
+/* Mobile background by default */
+.bg-fixed-responsive {
+  background-image: var(--mobile-bg);
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media (max-width: 767px) {
+/* Desktop background for larger screens */
+@media (min-width: 768px) {
   .bg-fixed-responsive {
-    background-attachment: scroll;
+    background-image: var(--desktop-bg);
+    background-attachment: fixed;
   }
 }
