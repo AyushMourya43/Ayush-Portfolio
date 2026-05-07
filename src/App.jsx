@@ -11,11 +11,10 @@ import bgImage from './assets/White-Background-Best-Wallpaper-16568.jpg';
 function App() {
   return (
     <div
-      className="min-h-screen"
+      className="min-h-screen bg-fixed-responsive"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: 'cover',
-        backgroundAttachment: 'fixed',
         backgroundPosition: 'center'
       }}
     >
